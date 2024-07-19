@@ -1,0 +1,15 @@
+body {
+    text-align: center;
+}
+
+.btn {
+    height: 200px;
+    width: 200px;
+    border: 10px solid black;
+    border-radius: 20%;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+}
