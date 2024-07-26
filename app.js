@@ -5,7 +5,10 @@ let started = false;
 let level = 0;
 let btns = ["red", "yellow", "purple", "green"];
 
+let highestScore = 0;
+
 let h2 = document.querySelector("h2");
+let h3 = document.querySelector("h3");
 
 document.addEventListener("keypress", function(){
     if(started == false){
@@ -51,6 +54,7 @@ function checkAns(idx){
         setTimeout(function(){
             document.querySelector("body").style.backgroundColor = "white";
         }, 250);
+        updateHighestScore();
         reset();
     }
 }
@@ -73,4 +77,11 @@ function reset(){
     gameSeq = [];
     userSeq = [];
     level = 0;
+}
+
+function updateHighestScore() {
+    if (level > highestScore) {
+        highestScore = level;
+        h3.innerText = `Highest Score : ${highestScore}`;
+    }
 }
