@@ -2,6 +2,9 @@
 
 This is a simple Simon Says game built with HTML, CSS, and JavaScript. The game generates a sequence of colors, and the player has to repeat the sequence by clicking the colored buttons.
 
+## Demo
+A live demo of the game can be found [here](https://anurag-jethi.github.io/Simon-says-game/).
+
 ## Features
 - Responsive design
 - Interactive gameplay
